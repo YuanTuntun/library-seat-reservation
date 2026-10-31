@@ -1,0 +1,15 @@
+{
+  "timezone": "Asia/Shanghai",
+  "run_time": "12:00:00",
+  "latest_end_time": "12:10:00",
+  "date_offset": 1,
+  "building": "图书馆",
+  "floor": "二层",
+  "room": "大学生自主学习中心",
+  "time_slot": "08:30 - 22:30",
+  "seat_priority": ["004", "008", "009", "010", "011", "012"],
+  "fallback_any_available": true,
+  "max_seat_attempts": 3,
+  "action_delay_ms": 450,
+  "dry_run": false
+}

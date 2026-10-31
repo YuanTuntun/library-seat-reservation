@@ -1,0 +1,12 @@
+[Unit]
+Description=Library seat reservation
+After=graphical-session.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/library-seat-reservation
+Environment=DISPLAY=:1
+Environment=XAUTHORITY=/run/user/1000/gdm/Xauthority
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+ExecStart=%h/library-seat-reservation/.venv/bin/python %h/library-seat-reservation/reserve.py --config %h/library-seat-reservation/config.json

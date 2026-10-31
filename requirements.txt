@@ -1,0 +1,3 @@
+Pillow
+numpy
+rapidocr_onnxruntime==1.4.4
